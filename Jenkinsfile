@@ -11,7 +11,7 @@ pipeline {
         git credentialsId: 'jenkins', url: 'https://github.com/srinivasareddy4218/loginApp.git'
       }
     }
-    stage('Building image') {
+    /*stage('Building image') {
       steps{
         script {
           dockerImage = docker.build registry + ":$BUILD_NUMBER"
@@ -33,6 +33,6 @@ pipeline {
       steps{
         sh "docker rmi $registry:$BUILD_NUMBER"
       }
-    }
+    } */
   }
 }
