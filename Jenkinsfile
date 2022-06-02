@@ -34,5 +34,10 @@ pipeline {
         sh "docker rmi $registry:$BUILD_NUMBER"
       }
     } */
+     stage('Deploy') {
+      steps{
+        echo "Pipeline was executed successfully in feature branch"
+      }
+    }
   }
 }
