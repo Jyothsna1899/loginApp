@@ -36,7 +36,7 @@ pipeline {
     } */
      stage('Deploy') {
       steps{
-        echo "Pipeline was executed successfully in feature branch"
+        echo "Pipeline was executed successfully in master branch"
       }
     }
   }
